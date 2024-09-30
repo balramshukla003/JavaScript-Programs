@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        
+        input{
+            font-size: 1.5rem;
+            padding: 10px;
+            margin: 5px;
+        }
+
+    </style>
+
+    <h1 id="Greeting">Enter time It's a Surprise (24hr)</h1>
+
+    <input type="text" placeholder="Enter time in 24hr format" id="Time"> <br>
+
+    <input type="submit" id="submit" onclick="Greeting()">
+
+    <script>
+        function Greeting(){
+        
+            const T=document.getElementById("Time").value;
+        
+            const currentHour=parseInt(T);
+            const H1=document.getElementById("Greeting");
+            
+            if (currentHour >=0 && currentHour <12 ) {
+                H1.innerText="Good Morning"
+            } else if (currentHour >=12 && currentHour <15 ) {
+                H1.innerText="Good Afternoon";
+            } else if(currentHour >=15 && currentHour <17){
+                H1.innerText="Good Evening";
+            } else{
+                H1.innerText="Good Night";
+            }
+             
+        }</script>
+</body>
+
+</html>
