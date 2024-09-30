@@ -1,0 +1,32 @@
+form {
+
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(224, 234, 191);
+    padding: 30px;
+    width: 400px;
+    height: auto;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+input
+{
+    border-radius: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 3px;
+    font-size: 1.2rem;
+}
+label{
+    border-radius: 10px;
+    width: 80%;
+    padding: 3px;
+    font-size: 1.3rem;
+}
